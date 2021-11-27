@@ -1,4 +1,12 @@
-import { Avatar, BannerCard, FeedList, FollowCard, Recommendation, RightContainer, Title } from "./RightSide.styles"
+import { 
+  Avatar, 
+  BannerCard, 
+  FeedList, 
+  FollowCard, 
+  Recommendation, 
+  RightContainer, 
+  Title 
+} from "./RightSide.styles"
 
 export const RightSide = () => {
   return (
