@@ -3,22 +3,21 @@ import styled from "styled-components";
 export const HeaderContainer = styled.header`
   background-color: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  height: 5.3rem;
   left: 0;
   padding: 0 24px;
   position: fixed;
   top: 0;
   width: 100vw;
   z-index: 100;
-  height: 5.3rem;
 `;
 
 export const Content = styled.div`
-  display: flex;
- 
   align-items: center;
+  display: flex;
+  height: inherit;
   justify-content: space-between;
   margin: 0 auto;
-  height: inherit;
   max-width: 1128px;
 
 `;
@@ -35,47 +34,48 @@ export const Search = styled.div`
   & > div {
     max-width: 28rem;
     input {
+      background-color: #eef3f8;
+      border-color: #dce6f1;
+      border-radius: 2px;
       border: none;
       box-shadow: none;
-      outline: none;
-      background-color: #eef3f8;
-      border-radius: 2px;
       color: rgba(0, 0, 0, 0.9);
-      width: 21.8rem;
-      padding: 0 .8rem 0 4rem;
-      line-height: 1.75;
-      font-weight: 400;
       font-size: 14px;
+      font-weight: 400;
       height: 34px;
-      border-color: #dce6f1;
+      line-height: 1.75;
+      outline: none;
+      padding: 0 .8rem 0 4rem;
       vertical-align: text-top;
+      width: 21.8rem;
     }
   }
 `;
 
 export const SearchIconWrapp = styled.div`
-  width: 4rem;
-  position: absolute;
-  z-index: 1;
-  top: 1rem;
-  left: .2rem;
+  align-items: center;
   border-radius: 0 .2rem .2rem 0;
-  margin: 0;
-  pointer-events: none;
   display: flex;
   justify-content: center;
-  align-items: center;
+  left: .2rem;
+  margin: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 1rem;
+  width: 4rem;
+  z-index: 1;
 `;
 
 export const Nav = styled.nav`
   margin-left: auto;
   display: block;
   @media (max-width: 768px) {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     background: white;
+    bottom: 0;
+    left: 0;
+    position: fixed;
     width: 100%;
+    
   }
 `;
 
