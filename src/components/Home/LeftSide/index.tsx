@@ -1,4 +1,15 @@
-import { AddPhotoText, ArtCard, CardBackground, CommunityCard, Item, LeftSideContainer, Link, Photo, UserInfo, Widget } from "./LeftSide.Styles"
+import { 
+  AddPhotoText, 
+  ArtCard, 
+  CardBackground, 
+  CommunityCard, 
+  Item, 
+  LeftSideContainer, 
+  Link, 
+  Photo, 
+  UserInfo, 
+  Widget 
+} from "./LeftSide.Styles"
 
 
 export const LeftSide = () => {
@@ -15,6 +26,7 @@ export const LeftSide = () => {
             <AddPhotoText>Add a photo</AddPhotoText>
           </a>
         </UserInfo>
+
         <Widget>
           <a>
             <div>
@@ -24,6 +36,7 @@ export const LeftSide = () => {
             <img src="/images/widget-icon.svg" alt="" />
           </a>
         </Widget>
+
         <Item>
           <span>
             <img src="/images/item-icon.svg" alt="" />

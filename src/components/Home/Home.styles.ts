@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   padding-top: 52px;
-  max-width: 100%;
+  max-width: 1128px;
+  margin: 0 auto;
 `;
 
 export const Section = styled.section`
