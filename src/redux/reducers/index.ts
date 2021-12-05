@@ -2,6 +2,6 @@ import { combineReducers  } from 'redux'
 
 import userReducer from './userReducer'
 
-let rootReducer = combineReducers({
+export let rootReducer = combineReducers({
   userState: userReducer
 })
