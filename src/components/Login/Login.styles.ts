@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-
+  
 
 `;
 
@@ -42,7 +42,6 @@ export const Join = styled.div`
 export const SignIn = styled.a`
   background-color: rgba(0, 0, 0, 0);
   border-radius: 2.4rem;
-  //box-shadow: inset 0 0 0 .1rem #0a66c2;
   border: 1px solid black;
   color: #0a66c2;
   font-size: 1.6rem;

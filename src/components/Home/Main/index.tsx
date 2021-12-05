@@ -3,9 +3,16 @@ import {
   EventIcon, 
   VideoIcon, 
   ArticleIcon, 
-  UserIcon 
+  UserIcon,
+  Elipsis,
+  LikeIcon,
+  Comment,
+  Share,
+  SendPost
 } from "../../assets"
-import { MainContainer, ShareBox } from "./Main.styles"
+
+
+import { Article, Description, MainContainer, Reactions, ShareBox, SharedActor, SharedImg } from "./Main.styles"
 
 
 export const Main = () => {
@@ -40,6 +47,47 @@ export const Main = () => {
 
         </div>
       </ShareBox>
+      <div>
+          <Article>
+            <SharedActor>
+              <a>
+                  <UserIcon />
+                  <div>
+                      <span>Title</span>
+                      <span>Info</span>
+                      <span>Date</span>
+                  </div>
+              </a>
+            <button>
+              <Elipsis />
+            </button>
+            </SharedActor>
+            <Description>Description</Description>
+            <SharedImg>
+              <a>
+                <img src='/images/shared-image.png' />
+              </a>
+            </SharedImg>
+            <Reactions>
+              <button>
+                <LikeIcon />
+                <span>Like</span>
+              </button>
+              <button>
+                <Comment />
+                <span>Comment</span>
+              </button>
+              <button>
+                <Share />
+                <span>Share</span>
+              </button>
+              <button>
+                <SendPost />
+                <span>Send</span>
+              </button>
+            </Reactions>
+          </Article>
+      </div>
     </MainContainer>
   )
 }
