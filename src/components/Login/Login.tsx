@@ -8,7 +8,7 @@ import {
   Section, 
   SignIn, 
 } from "./Login.styles"
-
+import { connect  } from 'react-redux'
 
 
 export const Login = (): JSX.Element => {
@@ -38,4 +38,14 @@ export const Login = (): JSX.Element => {
       </Section>
     </Container>
   )
+}
+
+const mapStateToProps = ( state ) => { 
+  return {
+
+  }
+}
+
+const mapDispatchToProps = ( dispatch ) => {
+  
 }
