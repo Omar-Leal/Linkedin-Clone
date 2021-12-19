@@ -8,10 +8,11 @@ import {
   Section, 
   SignIn, 
 } from "./Login.styles"
-import { connect  } from 'react-redux'
+import { connect } from 'react-redux'
+import { signInAction } from "../../redux/actions"
 
 
-export const Login = (): JSX.Element => {
+const Login = (props: any): JSX.Element => {
   return (
     <Container>
       <Nav>
@@ -30,7 +31,9 @@ export const Login = (): JSX.Element => {
           <img src='/images/new-hero.svg'  />
         </Hero> 
         <Form>
-          <Google>
+          <Google
+          onClick={ () => props.signin() }
+          >
             <img src='/images/google.svg' />
             Sign in with Google
           </Google>
@@ -40,12 +43,16 @@ export const Login = (): JSX.Element => {
   )
 }
 
-const mapStateToProps = ( state ) => { 
+const mapStateToProps = ( state: any ) => { 
   return {
 
   }
 }
 
-const mapDispatchToProps = ( dispatch ) => {
-  
-}
+const mapDispatchToProps = ( dispatch: any ) => ({
+  signin: () => dispatch( signInAction() ),
+
+})
+
+
+export default connect( mapStateToProps, mapDispatchToProps )( Login );

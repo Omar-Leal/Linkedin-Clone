@@ -10,7 +10,7 @@ const INITIAL_STATE =  {
 /** State Updater */
 const userReducer = ( state = INITIAL_STATE, action: Actions ) => {
   switch(action.type) {
-  
+     
     default:
       return state;
   }
